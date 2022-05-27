@@ -47,7 +47,7 @@ void func(int sockfd)
 	printf("Enter message to client 	: ");
     	n = 0;
 	bzero(buff, MAX);
-	while ((buff[i++] = getchar()) != '\n');
+	while ((buff[n++] = getchar()) != '\n');
 	if (strncmp("exit", buff, 4) == 0)
 	{
 	     printf("\nServer Exit...\n\n");
