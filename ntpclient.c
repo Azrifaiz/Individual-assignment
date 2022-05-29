@@ -77,7 +77,7 @@ int main()
     }
 
     server.sin_family = AF_INET;
-    server.sin_addr.s_addr = inet_addr("192.168.66.5");
+    server.sin_addr.s_addr = inet_addr("192.168.248.2");
     server.sin_port = htons(123);
 
     if (connect(sockfd, (struct sockaddr*)&server, sizeof(server)) != 0) {
